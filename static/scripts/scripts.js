@@ -68,10 +68,11 @@ function encryptText(parameter, number) {
 }
 
 function copyBtn() {
-    encryptArea.disable = false;
-    encryptArea.select();
-    const copy = document.execCommand('copy')
-    encryptArea.disable = true;
+    encryptedArea.disabled = false;
+    console.log(encryptedArea)
+    encryptedArea.select();
+    document.execCommand("copy");
+    encryptedArea.disabled = true;
 }
 
 btnCopy.addEventListener('click', () => {

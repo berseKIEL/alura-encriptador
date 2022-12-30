@@ -14,7 +14,6 @@ textarea {
   outline: 0;
   font-weight: 100;
   resize: none;
-  border-radius: 20px;
 }
 
 .hide {
@@ -43,6 +42,7 @@ textarea {
   background-color: white;
   height: 200px;
   margin-bottom: 20px;
+  border-radius: 20px;
 }
 
 .advert {
@@ -135,15 +135,22 @@ textarea {
     height: 100%;
   }
 
+  .contenido-principal > div {
+    width: 100%;
+    padding: 50px;
+  }
+
+  .encrypted-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 !important;
+  }
+
   .text-to-encrypt {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-
-  .contenido-principal > div {
-    width: 100%;
-    padding: 50px;
   }
 
   .not-encrypted {
