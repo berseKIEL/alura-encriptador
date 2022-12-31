@@ -12,15 +12,14 @@
     <link rel="stylesheet" href="static/css/styles.css" />
 
     <!-- Letras de google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&family=Rubik+Vinyl&display=swap" rel="stylesheet">
 
     <title>Codificar de Alura</title>
   </head>
   <body>
     <header>
-      <img src="static/img/Logo.png" alt="" class="icon-alura" />
+      <h1>Encryptor</h1>
+      <h1>Alura</h1>
     </header>
 
     <main class="contenido-principal">
@@ -28,24 +27,27 @@
         <h1>Bienvenido</h1>
         <textarea id="encrypt-area" placeholder="Escriba un texto aqui."></textarea>
         <div class="advert">
-          <img src="static/img/interrogacion.png" alt="cuidado"/>
+          <img src="static/img/interrogacion.png" alt="cuidado" />
           <p>Solo letras minusculas y sin acentos</p>
         </div>
         <div class="buttons">
-            <button class="btn" id="btn-encrypt">Encriptar</button>
-            <button class="btn" id="btn-desencrypt">Desencriptar</button>
+          <button class="btn" id="btn-encrypt">Encriptar</button>
+          <button class="btn" id="btn-desencrypt">Desencriptar</button>
         </div>
       </div>
       <div class="encrypted-text">
-          <div class="not-encrypted">
-            <img src="static/img/munieco.png"  alt="muñeco" class="munieco">
-            <h1 id="title-encrypt">Ningun mensaje fue encontrado</h1>
-            <textarea id="text-to-encrypt" class="hide" disabled></textarea>
-            <p id="text-encrypt">Ingrese el texto que desee encriptar o desencriptar.</p>
-            <button class="btn hide" id="btn-copy">Copiar</button>
-          </div>
+        <div class="not-encrypted">
+          <img src="static/img/munieco.png" alt="muñeco" class="munieco" />
+          <h1 id="title-encrypt">Ningun mensaje fue encontrado</h1>
+          <textarea id="text-to-encrypt" class="hide" disabled></textarea>
+          <p id="text-encrypt">Ingrese el texto que desee encriptar o desencriptar.</p>
+          <button class="btn hide" id="btn-copy">Copiar</button>
+        </div>
       </div>
     </main>
+    <footer>
+      <p>Copyright &copy; Barco Exequiel 2022</p>
+    </footer>
     <script src="static/scripts/scripts.js"></script>
   </body>
 </html>

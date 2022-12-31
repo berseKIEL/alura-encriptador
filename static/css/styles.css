@@ -1,28 +1,39 @@
 body {
   font-family: "Roboto Condensed", sans-serif;
-  background-color: #e5e5e5;
-  color: #0a3871;
+  background-color: hsl(0, 0%, 17%);
+  color: hsl(0, 0%, 100%);
 }
 
 textarea {
   padding: 10px 0px 10px 10px;
   font: inherit;
-  color: inherit;
-  background-color: #e5e5e5;
+  color: hsl(36, 100%, 50%);
+  background-color: white;
   width: 100%;
   border: 0;
   outline: 0;
-  font-weight: 100;
   resize: none;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 20px;
 }
 
 .hide {
   display: none;
 }
 
-.icon-alura {
-  padding: 40px 0;
-  width: 100px;
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: hsl(36, 100%, 50%);
+  padding: 10px 20px;
+}
+
+header h1 {
+  font-size: 48px;
+  font-weight: bold;
+  font-family: "Rubik Vinyl", cursive;
 }
 
 .contenido-principal {
@@ -63,19 +74,21 @@ textarea {
   width: 100%;
   padding: 20px;
   border-radius: 25px;
-  border: 1px solid #0a3871;
+  border: 1px solid hsl(36, 100%, 50%);
   background-color: white;
   cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 #btn-encrypt {
-  background-color: #0a3871;
+  background-color: hsl(36, 100%, 50%);
   color: white;
 }
 
 #btn-desencrypt {
   background-color: white;
-  color: #0a3871;
+  color: hsl(36, 100%, 50%);
 }
 
 .not-encrypted {
@@ -116,14 +129,17 @@ textarea {
   color: inherit;
 }
 
+footer {
+  background-color: hsl(36, 100%, 50%);
+  padding: 10px 0;
+  text-align: center;
+}
+
 @media screen and (min-width: 900px) {
   body {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-  }
-  header {
-    position: absolute;
-    top: 10px;
-    left: -20px;
   }
 
   .icon-alura {
