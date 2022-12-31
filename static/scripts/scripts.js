@@ -24,6 +24,7 @@ const btnCopy = document.getElementById('btn-copy');
 const btnDesencrypt = document.getElementById('btn-desencrypt');
 const encryptedArea = document.getElementById('text-to-encrypt');
 const textEncrypt = document.getElementById('text-encrypt');
+const munieco = document.querySelector('.munieco')
 
 btnEncrypt.addEventListener(('click'), () => {
     let texto = encryptArea.value;
@@ -61,6 +62,7 @@ function encryptText(parameter, number) {
         encryptedArea.textContent = parameter;
         textEncrypt.className = 'hide';
         encryptArea.value = '';
+        munieco.classList.add('hide');
     }
     else if (number == 2) {
         encryptArea.value = parameter;
