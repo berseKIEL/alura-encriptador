@@ -71,10 +71,13 @@ function encryptText(parameter, number) {
 
 function copyBtn() {
     encryptedArea.disabled = false;
-    console.log(encryptedArea)
+
     encryptedArea.select();
-    document.execCommand("copy");
-    encryptedArea.disabled = true;
+    encryptedArea.setSelectionRange(0, 99999);
+
+    navigator.clipboard.writeText(encryptedArea.value);
+
+    alert('Texto copiado exitosamente')
 }
 
 btnCopy.addEventListener('click', () => {

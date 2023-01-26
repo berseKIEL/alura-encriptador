@@ -182,7 +182,7 @@ footer {
 
   .not-encrypted {
     display: flex;
-    justify-content: unset;
+    justify-content: center;
     margin: inherit;
     float: right;
     width: 300px;
