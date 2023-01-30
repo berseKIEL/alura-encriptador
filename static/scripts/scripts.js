@@ -1,20 +1,42 @@
 
 //  Función de la encriptación
-function encriptador(mensaje, forma) {
-    let listaletras = ['i', 'e', 'a', 'o', 'u'];
-    let listaremplazo = ['imes ', 'enter', 'ai', 'ober', 'ufat'];
+// function encriptador(mensaje, forma) {
+//     let listaletras = ['i', 'e', 'a', 'o', 'u'];
+//     let listaremplazo = ['imes ', 'enter', 'ai', 'ober', 'ufat'];
 
-    if (forma == 1) {
-        for (let i = 0; i < listaletras.length; i++) {
-            mensaje = mensaje.replaceAll(listaletras[i], listaremplazo[i]);
-        }
+//     if (forma == 1) {
+//         for (let i = 0; i < listaletras.length; i++) {
+//             mensaje = mensaje.replaceAll(listaletras[i], listaremplazo[i]);
+//         }
+//     }
+//     else if (forma == 2) {
+//         for (let i = 0; i < listaletras.length; i++) {
+//             mensaje = mensaje.replaceAll(listaremplazo[i], listaletras[i]);
+//         }
+//     }
+//     return mensaje;
+// }
+
+function encriptador(mensaje, forma) {
+    let dict = {
+        'i': 'imes',
+        'e': 'enter',
+        'a': 'ai',
+        'o': 'ober',
+        'u': 'ufat'
     }
-    else if (forma == 2) {
-        for (let i = 0; i < listaletras.length; i++) {
-            mensaje = mensaje.replaceAll(listaremplazo[i], listaletras[i]);
-        }
-    }
-    return mensaje;
+
+    forma == 1 ?
+        Object.keys(dict)
+            .forEach(key => {
+                mensaje = mensaje.replaceAll(key, dict[key])
+            }) :
+        Object.keys(dict).
+            forEach(key => {
+                mensaje = mensaje.replaceAll(dict[key], key)
+            })
+
+    return mensaje
 }
 
 // Selección de botones
